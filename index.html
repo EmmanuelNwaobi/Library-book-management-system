@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Library Book Management</title>
+</head>
+<body>
+    
+    <div class="container">
+        <header class="header">
+            <h1>Library System</h1>
+        </header>
+
+        <section class="section-container">
+            <form id="form">
+                <div class="input-group">
+                    <label for="book">Enter book title</label>
+                    <input type="text" id="book" name="book" placeholder="E.g Things fall apart...">
+                </div>
+                <button class="add-btn">Add New Book</button>
+            </form>
+            <div class="available-book">
+                <div class="available-text">
+                    <h2>Available Books</h2>
+                </div>
+                <div class="book-container">
+                    <div class="book-title-and-remove-container">
+                        <div class="book-title">
+                            <p>Human Anatomy</p>
+                        </div>
+                        <div class="remove-container">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+
+                    <div class="book-title-and-remove-container">
+                        <div class="book-title">
+                            <p>Half of a yellow sun</p>
+                        </div>
+                        <div class="remove-container">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>Library System &copy; 2024</footer>
+    </div>
+
+</body>
+<script src="./index.js" type="module"></script>
+</html>

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: -0.5px;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+/* Variables */
+:root {
+    --bacgroundColor : #0077b6;
+    --textColor : #fff;
+    --mediumHeadingColor : #023e89;
+    --bookItemBG :  #caf0f8;
+    --removeBtnColor : #ff4d4d;
+    --removeHover : #e60000;
+    --addBtnColor : #0077b6;
+    --addHover : #005f73;
+    --footerText : #555;
+    --ts : all 1s ease-in-out;
+}
+
+
+.container {
+    width: 80%;
+    height: auto;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: start;
+    row-gap: 1rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 1rem;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    background-color: var(--bacgroundColor);
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: var(--textColor);
+    text-align: center;
+}
+
+.section-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+form {
+    width: 32%;
+    height: auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.7rem;
+}
+
+.input-group {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 0.3rem;
+}
+
+.input-group label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    height: 40px;
+    padding-left: 1rem;
+    border: none;
+    outline: none;
+    border: 1px solid #d7d7d7;
+    border-radius: 0.5rem;
+    transition: var(--ts);
+}
+
+input::placeholder {
+    font-size: 1rem;
+}
+
+input:focus {
+    border: 1px solid var(--bookItemBG);
+}
+
+.add-btn {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: var(--addBtnColor);
+    color: var(--textColor);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--ts);
+}
+
+.add-btn:hover {
+    background-color: var(--addHover);
+}
+
+.available-book {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.available-text {
+    width: fit-content;
+    height: auto;
+}
+
+.available-text h2 {
+    font-size: 2rem;
+    color: var(--mediumHeadingColor);
+}
+
+.book-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.8rem;
+}
+
+.book-title-and-remove-container {
+    background-color: var(--bookItemBG);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.book-title,
+.remove-container {
+    width: fit-content;
+    height: auto;
+}
+
+.book-title p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.remove-btn {
+    padding: 0.7rem;
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
+    background-color: var(--removeBtnColor);
+    color: var(--textColor);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--ts);
+}
+
+.remove-btn:hover {
+    background-color: var(--removeHover);
+}
+
+footer {
+    align-self: center;
+    margin-top: 0.8rem;
+    color: var(--footerText);
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 840px){
+    form {
+        width: 100%;
+    }
+}
